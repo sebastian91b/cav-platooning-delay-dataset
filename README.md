@@ -10,10 +10,10 @@ The experiments investigate the effects of V2V communication delays on the safet
 
 This repository includes two types of datasets:
 
-- **Run-level datasets where each row represents one simulation run and contains the simulation
-configuration, attack parameters, aggregated vehicle-dynamics metrics and collision outcome
+- Run-level datasets where each row represents one simulation run and contains the simulation
+  configuration, attack parameters, aggregated vehicle-dynamics metrics and collision outcome
 
-- **Beacon-level datasets, in which each row represents one beacon received by a vehicle during a particular simulation run. These records contain message timing, sender and receiver states, radio-channel measurements, and radar measurements. Each `run_id` in beacon-level dataset identifies a specific simulation run and corresponds to the experiment ID (`Ex ID`) in the run-level dataset.
+- Beacon-level datasets, in which each row represents one beacon received by a vehicle during a particular simulation run. These records contain message timing, sender and receiver states, radio-channel measurements, and    radar measurements. Each `run_id` in beacon-level dataset identifies a specific simulation run and corresponds to the experiment ID (`Ex ID`) in the run-level dataset.
 
 ## Data provenance and contributions
 
