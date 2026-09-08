@@ -4,24 +4,20 @@
 
 ## Overview
 
-This repository contains simulation-generated, run-level experimental
-datasets produced as part of a bachelor thesis at Mälardalen University.
+This repository contains simulation-generated experimental datasets produced as part of a bachelor thesis at Mälardalen University.
 
-The experiments investigate the effects of communication delays on the
-safety of cooperative vehicle platoons under different experimental
-conditions.
+The experiments investigate the effects of V2V communication delays on the safety of cooperative vehicle platoons during braking scenarios in which communication delays are introduced.
 
-Each row represents one simulation run and contains the simulation
-configuration, attack parameters, aggregated vehicle-dynamics metrics,
-and collision outcome.
+This repository includes two types of datasets:
 
-The datasets are neither time-series datasets nor packet- or beacon-level
-datasets. They can be used to calculate collision counts and collision
-rates
+- **Run-level datasets where each row represents one simulation run and contains the simulation
+configuration, attack parameters, aggregated vehicle-dynamics metrics and collision outcome
+
+- **Beacon-level datasets, in which each row represents one beacon received by a vehicle during a particular simulation run. These records contain message timing, sender and receiver states, radio-channel measurements, and radar measurements. Each `run_id` in beacon-level dataset identifies a specific simulation run and corresponds to the experiment ID (`Ex ID`) in the run-level dataset.
 
 ## Data provenance and contributions
 
-The dataset was generated using ComFASE (https://github.com/das-rise/ComFASE). [1] [2]
+The run-level dataset was generated using ComFASE (https://github.com/das-rise/ComFASE). [1] [2]
 
 ComFASE is built on top of OMNeT++ (https://omnetpp.org/) and integrates SUMO (https://www.eclipse.org/sumo/) and Veins (https://veins.car2x.org/). It also uses platooning scenario from Plexe-Veins (https://plexe.car2x.org/tutorial/).
 
@@ -49,7 +45,7 @@ Platoon size: 4, 5, 6, 7, 8 vehicles
 Leader speed: 80, 100 km/h
 Braking deceleration: 5, 6, 7, 8 m/s²
 Braking start time: 17 s
-Simulation time: 60, 120 s
+Simulation time: 60 s
 
 
 first attack starts: 16 s
